@@ -1,0 +1,90 @@
+.section {
+    background-image: url(./images/ABC1.webp);
+    height: 534px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-data {
+    text-align: center;
+}
+
+.section-data p {
+    font-family: 'Amita', cursive;
+    font-weight: 400;
+    font-size: 21px;
+    color: #FFFFFF;
+}
+
+.section-button {
+    background-color: #EEDD00;
+    width: 190px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 16px;
+    font-weight: 500;
+}
+
+.bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+.bold img {
+    position: relative;
+    top: -30px;
+}
+.highlight {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-top: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 40px 20px;
+    }
+
+    .bold {
+        font-size: 25px;
+    }
+
+    .highlight {
+        font-size: 20px;
+    }
+
+    .section-button {
+        width: 160px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section {
+        padding: 20px;
+    }
+
+    .bold {
+        font-size: 22px;
+    }
+
+    .highlight {
+        font-size: 18px;
+    }
+
+    .section-data p {
+        font-size: 18px;
+    }
+
+    .section-button {
+        width: 150px;
+        height: 35px;
+        font-size: 14px;
+    }
+}

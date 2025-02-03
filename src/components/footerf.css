@@ -1,0 +1,171 @@
+.footer-container {
+    margin: 80px 60px;
+}
+
+.footer-heading {
+    color: #31964A;
+    font-weight: 600;
+    font-family: "Inter",sans-serif;
+    font-size: 700;
+    font-weight: 19px;
+    margin-top: 10px;
+}
+
+.img-section img {
+    margin-right: 10px;
+}
+
+.footer-bg {
+    height: 305px;
+    border-radius: 15px;
+    background-color: #31964A;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 1px #EEDD00;
+}
+
+.footer-bg img {
+    position: absolute;
+    right: -48px;
+    top: -42px;
+    height: 50px;
+    
+}
+
+.footer-bg-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: white;
+}
+
+.footer-bg p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.footer-bg span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.ordernow-btn {
+    background-color: #EEDD00;
+    border-radius: 25px;
+    border: none;
+    margin: 20px auto; 
+    width: 160px;
+    height: 40px;
+    display: block;
+    text-align: center;
+}
+.footer-left p {
+    width: 450px;
+}
+.links {
+    margin-top: 20px;
+}
+.links div{
+    color: #31964A;
+}
+.links p {
+    font-weight: 400;
+    font-size: 17px;
+}
+.greater-icon {
+    font-size: 10px;
+}
+.inp {
+    border: 1px solid rgb(186, 184, 184);
+    width: 190px;
+    padding: 2px;
+}
+
+.inp input {
+    border: none;
+    outline: none;
+}
+
+.submit {
+    background-color: #EEDD00;
+    width: 100px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        margin: 20px;
+    }
+
+    .footer-bg {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .footer-bg img {
+        display: none;
+    }
+
+    .footer-bg-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .footer-bg p,
+    .footer-bg span {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .ordernow-btn {
+        margin-top: 20px;
+    }
+
+    .footer-left p {
+        width: 100%;
+    }
+
+    .img-section {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .links {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-bg-title {
+        font-size: 22px;
+    }
+
+    .footer-bg p,
+    .footer-bg span {
+        font-size: 14px;
+    }
+
+    .ordernow-btn {
+        width: 120px;
+        height: 35px;
+    }
+
+    .inp {
+        width: 100%;
+    }
+
+    .submit {
+        width: 100%;
+    }
+}

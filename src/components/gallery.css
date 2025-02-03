@@ -1,0 +1,95 @@
+.gallary {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.collage {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.collage-row {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.collage-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Added border radius for uniform rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better separation */
+}
+
+.collage-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    transition: transform 1s ease-in-out;
+    border-radius: 8px; /* Ensure image follows the border radius */
+}
+
+.collage-item img:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 1024px) {
+    .collage {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .collage-row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .collage {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .collage-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery h3 {
+        font-size: 28px;
+    }
+
+    .collage-item {
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .collage {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .collage-row {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery h3 {
+        font-size: 24px;
+    }
+
+    .collage-item {
+        height: 150px;
+    }
+}

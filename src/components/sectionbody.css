@@ -1,0 +1,106 @@
+/* .bg-images {
+    height: 508px;
+    width: 572px;
+    position: absolute;
+    margin-left: 70px;
+}
+.about-cont {
+    position: relative;
+}
+.about {
+    position: absolute;
+    width: 450px;
+    margin-top: 250px;
+    margin-left: 90px;
+}
+.about p {
+    font-size: 15px;
+}
+.about-title {
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+} */
+
+.section-body-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px; /* Add some padding for better spacing */
+}
+
+.col-md-7, .col-md-5 {
+    padding: 10px; /* Ensure content has proper padding */
+}
+
+.bg-images {
+    height: 508px;
+    width: 572px;
+    position: absolute;
+    margin-left: 70px;
+}
+
+.about-cont {
+    position: relative;
+}
+
+.about {
+    position: absolute;
+    width: 450px;
+    margin-top: 250px;
+    margin-left: 90px;
+}
+
+.about p {
+    font-size: 15px;
+}
+
+.about-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .section-body-container {
+        flex-direction: column; /* Stack columns vertically on tablet */
+    }
+
+    .col-md-7, .col-md-5 {
+        width: 100%; /* Ensure both columns take full width */
+    }
+
+    .bg-images {
+        width: 100%; /* Make the background image responsive */
+        height: auto; /* Adjust height based on aspect ratio */
+        margin-left: 0; /* Remove the margin */
+    }
+
+    .about {
+        position: relative; /* Adjust positioning for smaller screens */
+        width: 100%; /* Make about section responsive */
+        margin-top: 160px;
+        margin-left: 0; /* Remove left margin */
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    .about p {
+        font-size: 14px; /* Adjust font size for readability */
+    }
+
+    .about-title {
+        font-size: 22px; /* Adjust title size */
+    }
+    .bg-images2 {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about p {
+        font-size: 13px; /* Further adjust font size for smaller screens */
+    }
+
+    .about-title {
+        font-size: 20px; /* Smaller title font size */
+    }
+}

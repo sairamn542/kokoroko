@@ -1,0 +1,41 @@
+.product-heading {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.crd-2 {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: -4px 0 0 #31964A,
+        0 5px 10px #DBDBDB,
+        5px 0 10px #DBDBDB,
+        0 -5px 10px #DBDBDB;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crd-2:hover {
+    transform: translateX(15px);
+}
+
+.product-container {
+    padding: 40px 60px;
+}
+
+.egg-chicken {
+    width: 330px;
+    height: 500px;
+}
+
+@media screen and (max-width : 768px) {
+    .egg-chicken {
+        width: 250px;
+        height: 400px;
+    }
+    .egg-chicken-container {
+        display: flex;
+        justify-content: center;
+    }
+}
