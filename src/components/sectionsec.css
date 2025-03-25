@@ -1,25 +1,35 @@
+.swiper-container {
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.swiper-content {
+    margin-left: 40px;
+}
+
 .egg-container {
     display: flex;
-    flex-wrap: wrap; /* Enables wrapping for smaller screens */
-    justify-content: center; /* Centers items on smaller screens */
-    gap: 20px; /* Adds spacing between items */
-    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .egg {
     position: relative;
-    width: 200px; /* Default width */
-    height: 290px; /* Default height */
+    width: 200px;
+    height: 290px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .icon-container {
     display: flex;
+    gap: 10px;
 }
 
 .imgs {
     margin-top: 30px;
-    width: 100%; /* Ensures image scales with container */
-    height: auto; /* Maintains aspect ratio */
+    width: 100%;
+    height: auto;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -28,12 +38,11 @@
     text-align: center;
     top: 50%;
     left: 50%;
-    padding: 0;
-    z-index: 2;
     transform: translate(-50%, -50%);
     color: white;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .egg-content h4 {
@@ -48,28 +57,31 @@
 .egg::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Matches container height */
+    height: 100%;
     background-color: #E40011;
-    opacity: 0; /* Hidden by default */
+    opacity: 0;
     transition: opacity 0.3s ease-in-out;
     z-index: 1;
+    margin-top: 20px;
 }
 
 .egg:hover::after {
-    opacity: 1; /* Red background appears on hover */
+    opacity: 1;
+    margin-top: 20px;
 }
 
 .egg:hover .egg-content {
-    opacity: 1; /* Show content on hover */
+    opacity: 1;
 }
 
 .hover-description {
     font-size: 14px;
     margin-top: 10px;
 }
+
 .abs-title {
     position: absolute;
     top: 50%;
@@ -80,50 +92,69 @@
     text-align: center;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .egg-container {
-        justify-content: space-evenly;
-        gap: 15px;
-    }
+/* Swiper Navigation */
 
+/* Responsive */
+@media (max-width: 768px) {
     .egg {
         width: 150px;
         height: 220px;
     }
 
-    .egg-content {
-        font-size: 12px;
-        width: 90%; /* Ensures content fits smaller eggs */
-        margin-top: 20px;
+    .swiper-content {
+        margin-left: 50px;
     }
 
     .hover-description {
         font-size: 12px;
     }
-}
+    .egg::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #E40011;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        z-index: 1;
+        margin-top: 20px;
+    }
 
+    .egg:hover .egg-content {
+        margin-top: 20px;
+    }
+    
+    .egg:hover::after {
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
 
 @media (max-width: 480px) {
     .egg {
-        width: 120px;
-        height: 180px;
+        width: 150px;
+        height: 240px;
+    }
+
+    .egg:hover .egg-content {
+        margin-top: 30px;
     }
 
     .egg-content h4 {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .imgs {
         margin-top: 20px;
     }
+
+    .swiper-content {
+        margin-left: 50px;
+    }
+
     .abs-title {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -10%);
-        font-size: 16px;
-        color: black !important;
-        text-align: center;
+        font-size: 12px;
     }
 }

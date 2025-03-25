@@ -51,8 +51,12 @@
         padding: 40px 20px;
     }
 
-    .bold {
-        font-size: 25px;
+    .bold img {
+        position: relative;
+        left: 35px;
+        top: -60px;
+        height: 50px;
+        width: 50px;
     }
 
     .highlight {
@@ -72,6 +76,14 @@
 
     .bold {
         font-size: 22px;
+    }
+
+    .bold img {
+        position: relative;
+        left: 35px;
+        top: -60px;
+        height: 50px;
+        width: 50px;
     }
 
     .highlight {
